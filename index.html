@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birth Day Calculator</title>
+  </head>
+  <body style="background-color: rgb(17, 157, 221)">
+    <div style="margin-bottom: 45px">
+      <h2 style="margin-left: 450px">
+        Welcome to TechHype Birthday Calculator
+      </h2>
+    </div>
+    <table>
+      <tbody>
+        <tr class="header">
+          <th>&nbsp;</th>
+          <th>Year</th>
+          <th>Month</th>
+          <th>Day</th>
+        </tr>
+        <tr>
+          <th>Birth Date</th>
+          <td>
+            <input
+              style="height: 35px"
+              id="FromYear"
+              placeholder="YYYY"
+              value=""
+            />
+          </td>
+          <td>
+            <input
+              style="height: 35px"
+              id="FromMonth"
+              placeholder="MM"
+              value=""
+            />
+          </td>
+          <td>
+            <input
+              style="height: 35px"
+              id="FromDay"
+              placeholder="DD"
+              value=""
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="4">
+            <button
+              style="
+                background-color: chartreuse;
+                height: 50px;
+                width: 125px;
+                cursor: pointer;
+                border-radius: 5px;
+              "
+              id="calculateDiff"
+              onclick="calculateDiff()"
+            >
+              Calculate
+            </button>
+          </th>
+        </tr>
+        <tr colspan="4">
+          <th>
+            You are
+            <div
+              id="result"
+              style="
+                background-color: aqua;
+                height: 45px;
+                width: 195px;
+                border-color: crimson;
+                border-width: 5px;
+                color: rgb(236, 7, 7);
+                font-size: 20px;
+                box-shadow: 5px, 5px, 5px, black;
+              "
+            ></div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <script src="BirthDayCal.js"></script>
+  </body>
+</html>
